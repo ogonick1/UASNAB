@@ -16,7 +16,7 @@
 
 <body>
   <div class="container">
-    <!--<header class="header">
+    <header class="header">
       <div class="header__logo"><a href="#"><img src="./assets/img/logo.png" alt="logo"></a></div>
       <div class="header__menu">
         <div class="header__tel">
@@ -26,11 +26,41 @@
           <a class="header__tel-item" href="tel:+380985680105">(098) 568 01 05</a>
         </div>
         <div class="header__nav">
-          <a class="header__nav-item" href="#">Каталог</a>
+          <div class="header__nav-item catalog">
+            <a href="#">Каталог <span class="arrow"><img width="21" src="./assets/img/chevron-arrow.svg" alt="arrow"></span></a>
+            <ul class="dropdown-menu">
+              <li>
+                <a href="#">Стопорные кольца ГОСТ<span class="arrow-r"><img src="./assets/img/chevron-arrow.svg" alt="arrow"></span></a>
+                <ul class="submenu">
+                  <li><a href="#">Кольцо стопорное ГОСТ 13940-86</a></li>
+                  <li><a href="#">Кольцо стопорное ГОСТ 13941-86</a></li>
+                  <li><a href="#">Кольцо стопорное ГОСТ 13942-86</a></li>
+                  <li><a href="#">Кольцо стопорное ГОСТ 13943-86</a></li>
+                  <li><a href="#">Кольцо стопорное ГОСТ 11648</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">Стопорные кольца DIN <span class="arrow-r"><img src="./assets/img/chevron-arrow.svg" alt="arrow"></span></a>
+                <ul class="submenu">
+                  <li><a href="#">DIN 471</a></li>
+                  <li><a href="#">DIN 472</a></li>
+                  <li><a href="#">DIN 6799</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Подшипники</a></li>
+            </ul>
+          </div>
           <a class="header__nav-item" href="#">О Нас</a>
           <a class="header__nav-item" href="#">Контакти</a>
-          <a class="header__nav-item" href="#">UA</a>
+          <div class="header__nav-item language">
+            <a href="#">UA <span class="arrow"><img width="21" src="./assets/img/chevron-arrow.svg" alt="arrow"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">UA</a></li>
+              <li><a href="#">RU</a></li>
+            </ul>
+          </div>
         </div>
+
       </div>
     </header>
 
@@ -65,9 +95,9 @@
               <img src="./assets//img/471.png" alt="circle">
             </div>
             <div class="product__item-descr">
-              ГОСТ 13940<br>
-              ГОСТ 13942<br>
-              DIN 471 <br>
+              <a href="#">ГОСТ 13940</a><br>
+              <a href="#">ГОСТ 13942</a><br>
+              <a href="#">DIN 471</a><br>
             </div>
           </div>
           <div class="product__item-title">
@@ -96,7 +126,7 @@
             <div class="product__img-wrapper">
               <div class="product__circle1"></div>
               <div class="product__circle2"></div>
-              <img src="./assets//img/din-6799.png" alt="circle">
+              <img src="./assets//img/din6799.png" alt="circle">
             </div>
             <div class="product__item-descr">
               ГОСТ 11648 <br>
@@ -298,7 +328,7 @@
 
     <section class="catalog-product">
       <button class="catalog-product__btn">КАТАЛОГ ПРОДУКЦИИ</button>
-    </section>-->
+    </section>
 
     <section class="din-circle">
       <div class="din-circle__title-wrapper">
@@ -308,102 +338,208 @@
       </div>
       <div class="din-circle__product-wrapper">
         <div class="din-circle__product-item">
-          <div class="din-circle__img"><a href="#"><img  src="./assets//img/471.png" alt="circle"></a></div>
+          <div class="din-circle__img"><a href="#"><img src="./assets/img/471.png" alt="circle"></a></div>
           <div class="din-circle__link">
-            <a class="din-circle__link-item" href="#">Din</a>
+            <a class="din-circle__link-item" href="#">Din 471</a>
+          </div>
+        </div>
+        <div class="din-circle__product-item">
+          <div class="din-circle__img"><a href="#"><img src="./assets/img/din472.png" alt="circle"></a></div>
+          <div class="din-circle__link">
+            <a class="din-circle__link-item" href="#">Din 472</a>
+          </div>
+        </div>
+        <div class="din-circle__product-item">
+          <div class="din-circle__img"><a href="#"><img src="./assets/img/din6799.png" alt="circle"></a></div>
+          <div class="din-circle__link">
+            <a class="din-circle__link-item" href="#">Din 476799</a>
           </div>
         </div>
       </div>
       <div class="din-circle__description">
-        <p></p>
-        <h3></h3>
-        <p></p>
+        <p>
+          На сегодняшний день наружные и внутренние стопорные кольца DIN являются европейскими аналогами
+          продуктов с обозначением ГОСТ и обладают рядом особенностей. Они также крепятся на валу или в
+          функциональном отверстии, фиксируя подшипники качения и другие детали, защищая их от смещения,
+          поломки.
+          <br> <br>
+          При этом, форма и диаметр зависит от конкретной модели, а главное отличие заключается в толщине листа
+          углеродистой или нержавеющей стали, из которого изготовлена крепежная деталь – стопорные кольца ДИН немного
+          шире.
+        </p>
+        <p>
+          <br>
+          <b>Отличительные особенности</b>
+          <br> <br>
+          Внешние <a href="#">стопорные кольца DIN 471</a> соотносятся с отечественными аналогами по ГОСТу 13942-86. До
+          диаметра 7 мм отличий между ними нет, далее у определенных типоразмеров появляются отличия по ширине, а
+          некоторые модели вообще есть только в одном стандарте. Здесь нужно отметить один важный момент: с
+          диаметра 210 до 300 мм можно купить только кольцо стопорное ДИН – для таких типоразмеров нет
+          соответствия в ГОСТе.
+          <br> <br>
+          Для <a href="#">DIN 472</a> различия с соответствующим ГОСТом 13943-86 начинаются с диаметра 34 мм, а модели с
+          диаметрами 31 и 63 мм изготовлены только по европейскому стандарту. Остальные отечественные и
+          зарубежные продукты представлены во всех размерах, начиная с 8 мм, заканчивая 320 мм.
+          <br> <br>
+          Быстросъемные <a href="#">DIN 6799</a> являются аналогами отечественных моделей, изготовленных по ГОСТу
+          11648-75. Они крепятся
+          на валах и снимаются вручную, без использования специальных инструментов. Также
+          предназначены для фиксации вала, деталей на нем. В европейском стандарте представлены варианты
+          диаметром от 1 до 38 мм, а в отечественном – от 2 до 20 мм.
+        </p>
       </div>
 
       <div class="accordion">
         <div class="accordion-item">
           <button class="accordion-header">
-            Что нужно учитывать при выборе упорных колец?
+            Когда стоит сделать покупку?
             <span class="arrow"><img src="./assets/img/chevron-arrow.svg" alt="arrow"></span>
           </button>
           <div class="accordion-content">
             <p>
-              При выборе стопорных колец для своего предприятия стоит учесть ряд факторов. Среди них: <br>
+              Прежде, чем купить кольцо стопорное DIN в Киеве или любом другом населенном пункте Украины, нужно
+              определить:
             <ol>
-              <li>Интенсивность рабочего процесса.</li>
-              <li>Потенциальная нагрузка на крепления.</li>
-              <li>Допустимое время простоя.</li>
-              <li>Наличие инструментов для замены крепежных деталей.</li>
-              <li>Диаметр вала.</li>
-              <li>Форму, ширину и глубину канавки.</li>
+              <li> Диаметр вала/отверстия – изделие может быть чуть меньше или больше, нужно учитывать глубину канавки.*
+              </li>
+              <li>Назначение крепежных деталей и правила замеров диаметра.**</li>
+              <li>Возможную пластичность изделий при сжатии/расширении щипцами для монтажа.***</li>
+              <li>Толщину канавок (пазов), в которые будут погружаться запорные кольца.</li>
+              <li>Будущую интенсивность рабочего процесса, потенциальную нагрузку на крепежные детали.</li>
+              <li>Насколько необходима увеличенная толщина стали.</li>
             </ol>
             <br>
-            Чем интенсивней рабочий процесс, тем большую нагрузку будут испытывать крепежные детали. И тем чаще
-            придется их менять. При этом время на замену будет ограничено. В таком случае рекомендуем обратить
-            внимание на упорные шайбы. Они быстро демонтируются при минимуме усилий – для этого даже не нужны
-            инструменты. Если у вас все же есть
-            возможность менять крепления планово, то классическое стопорное кольцо станет оптимальным решением.
-            <br> <br>
-            От параметров вала и канавки зависит нужный размер, сечение, материал и тип стопорного кольца. Некоторые
-            размеры существуют только в одном стандарте – ГОСТ или DIN, но в целом – все типоразмеры взаимозаменяемы.
-            <br> <br>
-            Что касается материала, проволока легче поддается обработке, чем лента. Для проволочных креплений возможно
-            круглое сечение. А вот стальные стопорные шайбы имеют прямоугольное сечение, так как изготовлены из
-            листового материала.
+            *При монтаже/демонтаже внутренние стопорные кольца слегка сжимаются для фиксации в канавке, а наружные –
+            разжимаются для закрепления на валу, но затем плотно защелкиваются, охватывая канавку, благодаря пружинным
+            свойствам
+            <br>
+            ** Наружные стопорные кольца, быстросъемные шайбы измеряют по внутреннему диаметру, а внутренние –
+            наоборот, по внешнему
+            <br>
+            ***Зависит от марки стали, способа ее обработки. При превышении порога пластичности кольца и шайбы
+            безвозвратно
+            деформируются
+            <br>
+            Если ответы на второй и третий вопрос необходимы скорее для правильного выбора размера и
+            монтажа/демонтажа, то ответы на первый, четвертый, пятый и шестой вопросы могут стать веской причиной для
+            выбора продукции DIN.
+            <br>
+            Для определенного диаметра вала/отверстия, конкретной толщины канавок может попросту не найтись подходящей
+            модели, соответствующей ГОСТу. А усиленные нагрузки только подтверждают необходимость закупки изделий с
+            увеличенной толщиной стали, используемой в качестве сырья. Также этот пункт важен для принятия решения о
+            покупке оптом или в розницу.
             </p>
           </div>
         </div>
 
         <div class="accordion-item">
           <button class="accordion-header">
-            Правила замеров стопорных колец
+            Где приобрести?
             <span class="arrow"><img src="./assets/img/chevron-arrow.svg" alt="arrow"></span>
           </button>
           <div class="accordion-content">
-            <p>Существует два вида стопорных колец и оба предназначены для фиксации деталей – разница только в
-              способекрепления. Внешнее крепится на вал, а внутреннее – в функциональном отверстии. Такое разделение
-              обеспечивает надежную работу механизма.
+            <p>Получить грамотную консультацию, ответы на все интересующие вопросы, договориться о приемлемой цене на
+              розничную покупку, мелкий, средний или крупный опт и, наконец, купить стопорные кольца DIN в Украине
+              недорого можно через наш интернет-магазин. Процесс оформления заказа не отнимет у вас много времени, а
+              доставка возможна в любой из населенных пунктов.
               <br> <br>
-              Перед покупкой важно провести замеры с соблюдением правил. Наружные стопорные кольца и шайбы надо измерять
-              по внутреннему диаметру, а внутренние – по внешнему. Дело в том, что наружные крепления слегка разжимают,
-              а внутренние – сжимают при установке. Благодаря пружинным свойствам они потом принимают правильное
-              положение в канавке.
+              Цены, бонусная программа и возможность получения скидки вас приятно удивят, а качество продукции
+              подтверждено многочисленными проверками и сертификатами. На сегодняшний день, это лучшее соотношение цены
+              и качества, гарантируемого лучшими европейскими производителями.
             </p>
           </div>
         </div>
-        </div>
       </div>
+  </div>
 
-    </section>
-    <footer class="footer">
-      <div class="footer__container">
-        <div class="footer__social">
-          <div footer__logo>
-            <a href="#"><img height="25" src="./assets/img/logowhite.png" alt="logo"></a>
-          </div>
-          <div class="footer__link">
-            <a href="#"><img height="45" src="./assets/img/facebook.png" alt="social-icon"></a>
-            <a href="#"><img height="45" src="./assets/img/instagram.png" alt="social-icon"></a>
-          </div>
-        </div>
-        <div class="footer__adress">
-          <div class="footer__adress-email">
-            г. Киев<br>
-            ул. В. Шимановского, д. 2/1
-            <br>
-            <br>
-            <a href="mailto:manager@ua-snab.com.ua">manager@ua-snab.com.ua</a>
-          </div>
-          <div class="footer__adress-tel">
-            <a class="footer__adress-tel-item" href="tel:+0445680105">(044) 568 01 05</a>
-            <a class="footer__adress-tel-item" href="tel:+380635680105">(063) 568 01 05</a>
-            <a class="footer__adress-tel-item" href="tel:+380955680105">(095) 568 01 05</a>
-            <a class="footer__adress-tel-item" href="tel:+380985680105">(098) 568 01 05</a>
-          </div>
-        </div>
-        <div class="footer__year">© 2017-2024</div>
+  </section>
+
+
+    <section class="contacts">
+      <div class="din-circle__title-wrapper">
+        <h1 class="din-circle__title">Контакты</h1>
+        <div class="din-circle__circle1"></div>
+        <div class="din-circle__circle2"></div>
       </div>
-    </footer>
+      <div class="contacts__wrapper">
+        <div class="contacts__adress-tel">
+          <div class="contacts__adress-tel-adress"><b>Наш адрес:</b>
+            <br> <br>
+            г. Киев, ул. Виталия Шимановского, д.2/1
+            <br><br>
+            Телефоны:
+          </div>
+          <div class="contacts__adress-tel-tel">
+            <a class="contacts__adress-tel-item" href="tel:+0445680105">(044) 568 01 05</a>
+            <br>
+            <a class="contacts__adress-tel-item" href="tel:+380635680105">(063) 568 01 05</a>
+            <br>
+            <a class="contacts__adress-tel-item" href="tel:+380955680105">(095) 568 01 05</a>
+            <br>
+            <a class="contacts__adress-tel-item" href="tel:+380985680105">(098) 568 01 05</a>
+          </div>
+        </div>
+        <div class="contacts__map"> <img src="./assets/img/map.jpg" alt="map"></div>
+      </div>
+    </section>
+
+    <section class="connection">
+      <div class="connection__wrapper">
+      <div class="contact-form">
+        <h2 class="form-title">Свяжитесь с нами</h2>
+        <form class="connection__form" action="#" method="post">
+          <label class="connection__form-label">
+            Ваше имя (обязательно)
+            <input type="text" name="name" placeholder="Ваше имя" required>
+          </label>
+          <label class="connection__form-label">
+            Ваш e-mail
+            <input type="email" name="email" placeholder="Ваш e-mail" required>
+          </label>
+          <label class="connection__form-label">
+            Ваш телефон
+            <input type="tel" name="phone" placeholder="Ваш телефон" required>
+          </label>
+          <label class="connection__form-label">
+            Сообщение
+            <textarea name="message" placeholder="Сообщение" rows="5"></textarea>
+          </label>
+          <button type="submit" class="submit-button">ОТПРАВИТЬ</button>
+        </form>
+      </div>
+    </div>
+    </section>
+
+
+    <footer class="footer">
+    <div class="footer__container">
+      <div class="footer__social">
+        <div footer__logo>
+          <a href="#"><img height="25" src="./assets/img/logowhite.png" alt="logo"></a>
+        </div>
+        <div class="footer__link">
+          <a href="#"><img height="45" src="./assets/img/facebook.png" alt="social-icon"></a>
+          <a href="#"><img height="45" src="./assets/img/instagram.png" alt="social-icon"></a>
+        </div>
+      </div>
+      <div class="footer__adress">
+        <div class="footer__adress-email">
+          г. Киев<br>
+          ул. В. Шимановского, д. 2/1
+          <br>
+          <br>
+          <a href="mailto:manager@ua-snab.com.ua">manager@ua-snab.com.ua</a>
+        </div>
+        <div class="footer__adress-tel">
+          <a class="footer__adress-tel-item" href="tel:+0445680105">(044) 568 01 05</a>
+          <a class="footer__adress-tel-item" href="tel:+380635680105">(063) 568 01 05</a>
+          <a class="footer__adress-tel-item" href="tel:+380955680105">(095) 568 01 05</a>
+          <a class="footer__adress-tel-item" href="tel:+380985680105">(098) 568 01 05</a>
+        </div>
+      </div>
+      <div class="footer__year">© 2017-2024</div>
+    </div>
+  </footer>
   </div>
   <script src="./script.js"></script>
 </body>
