@@ -19,8 +19,6 @@ a {
 .container {
   margin: 0 auto;
   max-width: 2560px;
-  /*padding-left: 10px;
-  padding-right: 10px;*/
   display: flex;
   flex-direction: column;
 }
@@ -1041,10 +1039,17 @@ span {
 .din-circle__product-wrapper {
   margin-top: 60px;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   flex-wrap: wrap;
+  gap: 20px;
 }
 .din-circle__product-item {
+  flex-basis: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
 }
 .din-circle__img {
   display: flex;
