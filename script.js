@@ -46,16 +46,36 @@ document.addEventListener('click', event => {
 });
 
 
-const bodyWidth = document.body.offsetWidth;
-const viewportWidth = window.innerWidth;
+//// Знаходимо бургер-кнопку і меню
+//const burger = document.querySelector('.burger');
+//const menu = document.querySelector('.header__menu');
 
-if (bodyWidth > viewportWidth) {
-  console.log('Елементи, що виходять за межі екрана:');
-  document.querySelectorAll('*').forEach(el => {
-    if (el.offsetWidth > viewportWidth) {
-      console.log(el, el.offsetWidth);
-    }
+//// Додаємо обробник кліку
+//burger.addEventListener('click', () => {
+//  burger.classList.toggle('active');
+//  menu.classList.toggle('open');
+//});
+
+// Знаходимо елементи
+const burger = document.querySelector('.burger');
+const menu = document.querySelector('.header__menu');
+const body = document.body;
+
+// Обробник кліку на бургер
+burger.addEventListener('click', () => {
+  burger.classList.toggle('active');
+  menu.classList.toggle('open');
+  body.classList.toggle('lock-scroll');
+});
+
+// Субменю для мобільних
+const dropdowns = document.querySelectorAll('.header__nav-item .dropdown-menu');
+dropdowns.forEach((dropdown) => {
+  const parentLink = dropdown.previousElementSibling;
+
+  parentLink.addEventListener('click', (e) => {
+    e.preventDefault();
+    dropdown.classList.toggle('open');
   });
-} else {
-  console.log('Все в порядку, нічого не виходить за межі.');
-}
+});
+
