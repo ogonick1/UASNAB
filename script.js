@@ -44,3 +44,18 @@ document.addEventListener('click', event => {
     });
   }
 });
+
+
+const bodyWidth = document.body.offsetWidth;
+const viewportWidth = window.innerWidth;
+
+if (bodyWidth > viewportWidth) {
+  console.log('Елементи, що виходять за межі екрана:');
+  document.querySelectorAll('*').forEach(el => {
+    if (el.offsetWidth > viewportWidth) {
+      console.log(el, el.offsetWidth);
+    }
+  });
+} else {
+  console.log('Все в порядку, нічого не виходить за межі.');
+}
