@@ -57,20 +57,14 @@ a {
   font-size: 18px;
   text-align: left;
   color: #fff;
+  padding-top: 4px;
+  padding-bottom: 4px;
 }
 
 .header__tel-item {
   text-decoration: none;
   color: #fff;
 }
-/*.header__nav-item {
-  transition: all 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-  text-decoration: none;
-  color: #000;
-}
-.header__nav-item:hover {
-  color: #d12a21;
-}*/
 
 .header__nav {
   display: flex;
@@ -611,7 +605,7 @@ a {
 
   .description-work__description {
     margin-top: 100px;
-    max-width: 190px;
+    max-width: 150px;
     text-align: center;
     font-size: 12px;
   }
